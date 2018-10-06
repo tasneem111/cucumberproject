@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="4" time="307.10606">
+<testcase classname="Login Test" name="Successful login scenario" time="148.276592">
+<system-out><![CDATA[Given I am able to access magento webpage...................................passed
+When I update the username as "natarajan.ramanathan93@gmail.com"............passed
+And I update the password as "Welcome123"...................................passed
+And I click on the login button.............................................passed
+Then I should find the magento id as "ID: MAG003417822".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Test" name="Invalid Login" time="104.951686">
+<system-out><![CDATA[Given I am able to access magento webpage...................................passed
+When I update the username as "test1.user1@gmail.com".......................passed
+And I update the password as "password1"....................................passed
+And I click on the login button.............................................passed
+Then I should see error as "Invalid login or password.".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Test" name="Invalid Login 2" time="37.443481">
+<system-out><![CDATA[Given I am able to access magento webpage...................................passed
+When I update the username as "test.user@gmail.com".........................passed
+And I update the password as "password2"....................................passed
+And I click on the login button.............................................passed
+Then I should see error as "Invalid login or password.".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Test" name="Add customer" time="16.434301">
+<skipped><![CDATA[Given I am able to access magento webpage...................................passed
+Given I am able to access the webpage.......................................undefined
+When I update the user name as "xyz"........................................undefined
+And I update the password as "abc"..........................................skipped
+And I update the customer detail............................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
